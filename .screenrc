@@ -1,14 +1,31 @@
+# Config file for screen.
+
+compacthist on
+ignorecase on
+
+# Don't display the copyright page
 startup_message off
-bell_msg ""
+
+# tab-completion flash in heading bar
 vbell off
-term rxvt
-defscrollback 1024
-hardstatus on
-hardstatus alwayslastline '%{= .} %-Lw%{= .}%> %n%f %t*%{= .}%+Lw%< %-=%{g}(%{d}%H/%l%{g})'
 
-shelltitle "$ |bash"
+# keep scrollback n lines
+defscrollback 1000
 
-screen -t mutt 0 "mutt-patched"
-screen -t gertty 1 sh -c "gertty -d"
-screen -t newsbeuter 2 "newsbeuter"
+#shelltitle "$ | sh"
 
+shelltitle '] | bash'
+
+shell -$SHELL
+
+# shell:  Default process started in screen's windows.
+# Makes it possible to use a different shell inside screen
+# than is set as the default login shell.  Halleluja! :-)
+shell                  zsh
+#shell                 bash
+# shell                ksh
+
+hardstatus string "%h"
+caption always "%{= kw} %-w%{= wk}%n*%t%{-}%+w%{= kw} %=%d %M %0c" #transparent
+
+#caption always "%{kG}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{kG}%?%+Lw%? %=%c %Y-%m-%d" #green bar
