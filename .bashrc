@@ -141,6 +141,7 @@ alias 6="2to6"
 alias hf="flake8 heat/ heat_integrationtests/ contrib/ bin/"
 alias tt="python -m testtools.run"
 alias gcad="git commit --amend --date='$(date -R)'"
+alias gb="git branch"
 
 tt10() {
     for i in {1..10}; do tt $1; done
