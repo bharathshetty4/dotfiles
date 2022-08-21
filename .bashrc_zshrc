@@ -1,5 +1,12 @@
+# Create thw file .zshrc to source this file to use zshrc
+ZSH_DISABLE_COMPFIX=true
+if type brew &>/dev/null; then
+  autoload -Uz compinit
+  compinit
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+fi
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-source ~/.bash_profile
+
 tput smam
 alias lss='ls -lFh' #size,show type,human readable
 alias la='ls -lAFh' #long list,show almost all,show type,human readable
