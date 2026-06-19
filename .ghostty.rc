@@ -1,0 +1,61 @@
+# Font
+font-family = Menlo
+font-size = 17
+bold-is-bright = true
+
+# Window padding
+window-padding-x = 6
+window-padding-y = 6
+
+# Cursor
+cursor-style = block
+
+# Background / foreground
+background = #120000
+foreground = #33ff99
+
+# Selection colors
+selection-background = #335533
+selection-foreground = #ccffcc
+
+# Cursor colors
+cursor-color = #33ff99
+# cursor-color = #033099
+cursor-text = #120000
+
+# ANSI palette
+palette = 0=#000000
+palette = 1=#ff5555
+palette = 2=#33ff99
+palette = 3=#f1fa8c
+palette = 4=#66aaff
+palette = 5=#ff79c6
+palette = 6=#8be9fd
+palette = 7=#bbbbbb
+
+palette = 8=#44475a
+palette = 9=#ff6e6e
+palette = 10=#50fa7b
+palette = 11=#ffffa5
+palette = 12=#7abaff
+palette = 13=#ff92df
+palette = 14=#a4ffff
+palette = 15=#ffffff
+
+# Shell integration look
+shell-integration = zsh
+
+# Optional: slightly tighter terminal feel
+
+
+# macOS style
+#macos-titlebar-style = hidden
+macos-non-native-fullscreen = true
+macos-titlebar-style = transparent
+
+
+
+#clipboard
+copy-on-select = clipboard
+clipboard-trim-trailing-spaces = true
+
